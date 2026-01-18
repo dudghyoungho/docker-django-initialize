@@ -5,7 +5,7 @@
 init:
 	@if [ ! -f .env ]; then cp .env.example .env; fi
 	docker-compose build
-	docker-compose run --rm web django-admin startproject config backend .
+	docker-compose run --rm web django-admin startproject config backend
 
 # 2. 서버 실행
 up:
